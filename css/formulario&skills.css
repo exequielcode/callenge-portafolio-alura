@@ -1,0 +1,261 @@
+.container_skils{
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+.container_skils{
+    background-color: #f5f5f5;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container_skils .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+}
+.container_skils .box_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+    padding-top: 30px;
+}
+.container_skils .box_container .box{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+.container_skils .box_container .box img{
+    height: 50px;
+}
+.container_skils ,.box_container .box h3 {
+    line-height: 2.8;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/*RESPONSIIVE SKILLS*/
+
+/*Para pantallas con un ancho maximo de 280px*/
+@media(max-width: 280px) {
+    .container_skils {
+        padding: 5px 5%;
+        padding-bottom: 50px;
+    }
+
+    .container_skils .heading {
+        font-size: 24px;
+    }
+
+    .container_skils .box_container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    .container_skils .box_container .box {
+        padding: 25px 10px;
+    }
+}
+
+
+
+/* Para pantallas con un ancho máximo de 430px */
+@media screen and (max-width: 430px) {
+    .container_skils .box_container{
+        grid-template-columns: 1fr;
+    }
+    .container_skils .box_container .box img{
+        height: 30px;
+    }
+}
+
+/* Para pantallas con un ancho máximo de 768px */
+@media screen and (max-width: 768px) {
+    .container_skils .box_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_skils .box_container .box img{
+        height: 40px;
+    }
+}
+
+/* Para pantallas con un ancho máximo de 1440px */
+@media screen and (max-width: 1440px) {
+    .container_skils .box_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+/*Aquí diseñio DE FORMACION*/
+
+
+.container_formacion_academica {
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+.container_formacion_academica {
+    background-color: #EAF2FD;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+.container_formacion_academica .heading{
+    text-align: center;
+    padding-bottom:15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+    margin-top: 2rem;
+}
+.container_formacion_academica .box_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 80px 15px;
+    padding-top: 70px;
+}
+.container_formacion_academica .box_container .box {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    
+}
+.container_formacion_academica .box_container .box img {
+    height: 100px;
+}
+.container_formacion_academica .box_container h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #464646;
+
+}
+.container_formacion_academica .box_container p {
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 500;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*RESPONSIVE DE FORMACION*/
+@media(max-width: 280px) {
+    .container_formacion_academica {
+        padding: 5px 5%;
+        padding-bottom: 50px;
+    }
+
+    .container_formacion_academica .heading {
+        font-size: 24px;
+        margin-top: 1rem;
+    }
+
+    .container_formacion_academica .box_container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 40px 7.5px;
+        padding-top: 35px;
+    }
+
+    .container_formacion_academica .box_container .box {
+        padding: 25px 10px;
+    }
+
+    .container_formacion_academica .box_container .box img {
+        height: 50px;
+    }
+
+    .container_formacion_academica .box_container h3 {
+        font-size: 16px;
+    }
+
+    .container_formacion_academica .box_container p {
+        font-size: 0.8rem;
+    }
+}
+
+/*----------------------------*/
+@media screen and (max-width: 430px) {
+    .container_formacion_academica {
+        padding: 10px 5%;
+        padding-bottom: 50px;
+    }
+    .container_formacion_academica .heading{
+        font-size: 24px;
+    }
+    .container_formacion_academica .box_container{
+        grid-template-columns: 1fr;
+        grid-gap: 40px 10px;
+        padding-top: 35px;
+    }
+    .container_formacion_academica .box_container .box {
+        padding: 25px 10px;
+    }
+    .container_formacion_academica .box_container .box img {
+        height: 50px;
+    }
+    .container_formacion_academica .box_container h3 {
+        font-size: 18px;
+    }
+    .container_formacion_academica .box_container p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:768px) {
+    .container_formacion_academica {
+        padding: 12px 7%;
+        padding-bottom: 75px;
+    }
+    .container_formacion_academica .heading{
+        font-size: 28px;
+    }
+    .container_formacion_academica .box_container{
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 60px 10px;
+        padding-top: 50px;
+    }
+    .container_formacion_academica .box_container .box {
+        padding: 35px 15px;
+    }
+    .container_formacion_academica .box_container .box img {
+        height: 75px;
+    }
+    .container_formacion_academica .box_container h3 {
+        font-size: 20px;
+    }
+    .container_formacion_academica .box_container p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container_formacion_academica {
+        padding: 14px 8%;
+        padding-bottom: 90px;
+    }
+    .container_formacion_academica .heading{
+        font-size: 30px;
+    }
+    .container_formacion_academica .box_container{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 70px 12px;
+        padding-top: 60px;
+    }
+    .container_formacion_academica .box_container .box {
+        padding: 45px 18px;
+    }
+    .container_formacion_academica .box_container .box img {
+        height: 90px;
+    }
+    .container_formacion_academica .box_container h3 {
+        font-size: 21px;
+    }
+    .container_formacion_academica .box_container p {
+        font-size: 0.95rem;
+    }
+}
+
+
